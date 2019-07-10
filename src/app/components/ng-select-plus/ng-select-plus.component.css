@@ -15,9 +15,17 @@
 }
 .drop-toggle-button{
   float:right;
-  background: #BABABA;
   height: 35px;
   width: 100%;
+  border-radius: 0px 2px 2px 0px;
+  background-color: #BABABA; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
 }
 .drop-show {
   padding: 4px;
@@ -56,5 +64,12 @@
 
 
 #search {
-  width: 100%;
+  width: 98%;
+  padding: 10px 17px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+
