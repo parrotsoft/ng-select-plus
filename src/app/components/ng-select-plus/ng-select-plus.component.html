@@ -1,7 +1,7 @@
 <div [ngClass]="{'require-input-2':checkedList.length>=1, 'require-input-1':checkedList.length==0}" class="require-input-1" style="margin-bottom: 1em;">
   <div (mouseleave)="showDropDown = false">
 
-    <div style="border: 1px solid #cccccc; height: 40px;">
+    <div>
 
       <div style="width: 95%; float: left;">
           <button class="drop-toggle  flat" (click)="showDropDown=!showDropDown">

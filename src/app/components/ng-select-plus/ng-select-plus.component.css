@@ -1,5 +1,5 @@
-.drop-toggle.flat{
-  /* height: 25px !important;*/
+.drop-toggle .flat{
+  height: 25px !important;
 }
 .drop-toggle{
   background-color: #fff;
@@ -13,10 +13,11 @@
   height: 35px;
   overflow-y: scroll;
 }
-.drop-toggle button{
+.drop-toggle-button{
   float:right;
-  width: 500px;
-  background: red;
+  background: #BABABA;
+  height: 35px;
+  width: 100%;
 }
 .drop-show {
   padding: 4px;
