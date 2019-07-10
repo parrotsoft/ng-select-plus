@@ -14,12 +14,12 @@ export class NgSelectPlusComponent implements OnInit, OnChanges {
   @Input() placeholder: string;
   @Input() placeholderSearch ? = 'Search';
   @Input() showSearch ? = false;
-  @Input() inclass: string;
+
   @Input() value?: any;
   @Input() text?: string;
 
-  @Output() changedList? = new EventEmitter(); // Retorna un array con los objecto seleccionado...
-  @Output() shareIndividualCheckedList? = new EventEmitter(); // Retorna el item que se proceso ya sea activando o no
+  @Output() changedList ? = new EventEmitter(); // Retorna un array con los objecto seleccionado...
+  @Output() shareIndividualCheckedList ? = new EventEmitter(); // Retorna el item que se proceso ya sea activando o no
 
   listOriginal: any[];
 

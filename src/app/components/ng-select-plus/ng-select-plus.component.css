@@ -11,9 +11,12 @@
   width: 100%;
   text-align: left;
   height: 35px;
+  overflow-y: scroll;
 }
-.drop-toggle i{
+.drop-toggle button{
   float:right;
+  width: 500px;
+  background: red;
 }
 .drop-show {
   padding: 4px;

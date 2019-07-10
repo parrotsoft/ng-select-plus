@@ -1,8 +1,9 @@
 <div [ngClass]="{'require-input-2':checkedList.length>=1, 'require-input-1':checkedList.length==0}" class="require-input-1" style="margin-bottom: 1em;">
   <div (mouseleave)="showDropDown = false">
-    <div class="container-row position-relative">
 
-      <div class="row row-100 padding-r-5">
+    <div style="border: 1px solid #cccccc; height: 40px;">
+
+      <div style="width: 95%; float: left;">
           <button class="drop-toggle  flat" (click)="showDropDown=!showDropDown">
             <span *ngIf="checkedList.length<=0">{{ placeholder }}</span>
             <span class="d-block text-ellipsis" *ngIf="checkedList.length>0">{{listText}}</span>
@@ -10,29 +11,29 @@
           </button>
       </div>
 
-      <div class="row row-15 position-absolute position-right position-top center-translate center-y margin-r--10 cursor-pointer"
-      *ngIf="checkedList.length !== 0">
-          <button (click)="clear()"><i class="fa fa-times" aria-hidden="true"></i></button>
+      <div style="width: 5%; float: right;" *ngIf="checkedList.length !== 0">
+          <button (click)="clear()" class="drop-toggle-button">X</button>
       </div>
 
     </div>
 
+
     <div class="drop-show" *ngIf="showDropDown">
-      <div class="container padding height " [ngClass]="inclass ? inclass : 'height-120'">
+      <div class="container padding height">
 
         <div *ngIf="showSearch">
           <input type="text" name="search " id="search"
-          placeholder="{{placeholderSearch}}" [(ngModel)]="search" (input)="eventHandler($event)">
+          placeholder="{{placeholderSearch}}" [(ngModel)]="search" (input)="eventHandler($event)" autocomplete="off">
         </div>
 
-        <label class="input-checkbox input-checkbox-small">
+        <label>
           <input type="checkbox" [(ngModel)]="all" (change)="toggleSelectAll($event.target.checked)"/>
           <span class="font-em em-1-3">All</span>
         </label>
 
-        <label class="input-checkbox input-checkbox-small" *ngFor="let a of list | listFilterPipe : 'nombre' : search">
+        <label *ngFor="let a of list | listFilterPipe : 'nombre' : search">
           <input type="checkbox" [(ngModel)]="a.checked" (change)="getSelectedValue($event.target.checked, a)" />
-          <span class="font-em em-1-3">{{ getValue(a)}}</span>
+          <span>{{ getValue(a)}}</span>
         </label>
 
       </div>
