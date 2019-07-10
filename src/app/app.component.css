@@ -1,0 +1,12 @@
+.container {
+  width: 50%;
+  height: 500px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  padding: 4em;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+}

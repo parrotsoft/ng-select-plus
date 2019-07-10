@@ -1,0 +1,54 @@
+.drop-toggle.flat{
+  /* height: 25px !important;*/
+}
+.drop-toggle{
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  cursor: hand;
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: left;
+  height: 35px;
+}
+.drop-toggle i{
+  float:right;
+}
+.drop-show {
+  padding: 4px;
+  min-width: 48%;
+  background-color: #FFF;
+  border: 1px solid #BABABA;
+  position: absolute;
+  z-index: 999 !important;
+  -webkit-box-shadow: 0 6px 10px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 6px 10px rgba(0,0,0,.15);
+  box-shadow: 0 6px 10px rgba(0,0,0,.15);
+  margin-left: 0px;
+}
+.drop-show label{
+  display:block;
+  font-size:10px;
+  cursor: pointer;
+}
+.drop-show label input{
+  vertical-align: top;
+}
+.drop-show label span{
+  display:inline-block;
+}
+
+.require-input-1 {
+  border-left: 5px solid #F95372;
+}
+
+
+.require-input-2 {
+  border-left: 5px solid #42A948;
+}
+
+
+#search {
+  width: 100%;
+}
