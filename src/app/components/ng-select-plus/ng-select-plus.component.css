@@ -30,10 +30,12 @@
   -moz-box-shadow: 0 6px 10px rgba(0,0,0,.15);
   box-shadow: 0 6px 10px rgba(0,0,0,.15);
   margin-left: 0px;
+  margin-top: 2em;
 }
 .drop-show label{
   display:block;
-  font-size:10px;
+  font-family: 'Arial', Courier, monospace;
+  font-size:12px;
   cursor: pointer;
 }
 .drop-show label input{

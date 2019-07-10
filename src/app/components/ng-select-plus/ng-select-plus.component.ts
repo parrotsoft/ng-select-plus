@@ -21,8 +21,6 @@ export class NgSelectPlusComponent implements OnInit, OnChanges {
   @Output() changedList ? = new EventEmitter(); // Retorna un array con los objecto seleccionado...
   @Output() shareIndividualCheckedList ? = new EventEmitter(); // Retorna el item que se proceso ya sea activando o no
 
-  listOriginal: any[];
-
   checkedList: any[];
   currentSelected: {};
   listText: string;
@@ -37,9 +35,6 @@ export class NgSelectPlusComponent implements OnInit, OnChanges {
    * @Description:
    */
   ngOnInit() {
-    if (this.showSearch) {
-      this.listOriginal = this.list;
-    }
   }
 
   toggleSelectAll(checked) {
